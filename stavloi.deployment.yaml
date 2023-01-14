@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stavloi
+  labels:
+    app: stavloi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stavloi
+  template:
+    metadata:
+      labels:
+        app: stavloi
+    spec:
+      containers:
+        - name: stavloi
+          image: vaggelas/file-server-application:42.0
+          ports:
+            - containerPort: 8080

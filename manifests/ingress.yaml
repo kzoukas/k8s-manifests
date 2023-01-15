@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`stavloi.gr`)
+    - match: Host(`www.stavloi.gr`)
       kind: Rule
       services:
         - name: stavloi

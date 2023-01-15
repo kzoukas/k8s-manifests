@@ -11,3 +11,8 @@ spec:
       services:
         - name: stavloi
           port: 80
+    - match: Host(`stavloi.gr`)
+      kind: Rule
+      services:
+        - name: stavloi
+          port: 80

@@ -1,13 +1,14 @@
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRoute
+apiVersion: extensions/v1beta1
+kind: Ingress
 metadata:
   name: ingress-stavloi
+  namespace: stavloi
 spec:
-  entryPoints:
-    - stavloi
-  routes:
-    - match: Host(`stavloi.gr`)
-      kind: Rule
-      services:
-        - name: stavloi
-          port: 80
+  rules:
+  - host: stavloi.gr
+    http:
+     paths:
+     - path: /
+      backend:
+         serviceName: stavloi
+         servicePort: web

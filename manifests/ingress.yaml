@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: ingress-stavloi
+  name: ingress-stavloi-1
   namespace: stavloi
 spec:
   rules:

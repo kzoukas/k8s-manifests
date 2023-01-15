@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: stavloi
-          image: vaggelas/file-server-application:42.0
+          image: zoukas/stavloi:4.0
           ports:
             - containerPort: 8080

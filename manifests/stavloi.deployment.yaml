@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: stavloi
-          image: vaggelas/stavloi:5.5
+          image: vaggelas/stavloi:5.12
           ports:
             - containerPort: 8080
